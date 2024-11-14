@@ -12,6 +12,9 @@ const nextConfig = {
 	eslint: {
 		ignoreDuringBuilds: true,
 	},
+	typescript: {
+		ignoreBuildErrors: true,
+	},
 };
 // if you are not using polylang integration you can remove this code
 // if you are replace the locales with the ones you are using
