@@ -16,7 +16,7 @@ const headerStyles = css`
 
 	> div,
 	> ul {
-		width: 400px;
+		width: 450px;
 	}
 `;
 
