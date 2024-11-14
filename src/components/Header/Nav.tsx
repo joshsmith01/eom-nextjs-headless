@@ -33,8 +33,7 @@ const navStyles = css`
 `;
 
 export const Nav = () => {
-	const { data } = useMenu('primary');
-
+	const { data } = useMenu('main_navigation');
 	if (!data) {
 		return null;
 	}

@@ -23,7 +23,9 @@ type RecentPostProps = {
 const RecentPost = ({ post }: RecentPostProps) => {
 	return (
 		<div>
-			<h3>{post.title.rendered}</h3>
+			<Link href={post.slug}>
+				<h3>{post.title.rendered}</h3>
+			</Link>
 		</div>
 	);
 };
@@ -37,7 +39,7 @@ const Homepage = ({ homePageSlug }: InferGetStaticPropsType<typeof getStaticProp
 			// you can override any defaults supported by the REST API
 			per_page: 5,
 			// it is recommended to only fetch the fields you need
-			_fields: ['title', 'id'],
+			_fields: ['title', 'id', 'slug'],
 		},
 		// since this is only a client-side query
 		// we want to force revalidating on mount to ensure query runs on mount
