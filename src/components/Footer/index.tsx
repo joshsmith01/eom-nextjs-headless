@@ -27,7 +27,7 @@ const Footer = () => {
 		<StyledFooter>
 			<FooterLinks />
 			<div>
-				<p>Copyright &copy; 10up {new Date().getFullYear()}. All Rights Reserved</p>
+				<p>&copy; Efficiency of Movement {new Date().getFullYear()}. All Rights Reserved</p>
 			</div>
 			<div />
 		</StyledFooter>
