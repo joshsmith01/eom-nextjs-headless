@@ -12,11 +12,11 @@ module.exports = {
 	customPostTypes: [
 		// this is just an example
 		{
-			slug: 'book',
-			endpoint: '/wp-json/wp/v2/book',
+			slug: 'talks',
+			endpoint: '/wp-json/wp/v2/talks',
 			// these should match your file-system routing
-			single: '/book',
-			archive: '/books',
+			single: '/talks',
+			archive: '/talks',
 		},
 	],
 	customTaxonomies: (defaultTaxonomies) => {

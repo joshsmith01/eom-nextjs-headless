@@ -5,7 +5,7 @@ import type {
 	TaxonomyArchiveParams,
 } from '@headstartwp/core';
 
-export const singleParams: PostParams = { postType: ['page', 'post'] };
+export const singleParams: PostParams = { postType: ['page', 'post', 'books'] };
 
 export const indexParams: PostParams = { postType: ['page'] };
 
@@ -20,6 +20,21 @@ export const blogParams: PostOrPostsParams = {
 	},
 	archive: {
 		postType: 'post',
+		/**
+		 * Specifying the _fields param reduces the amount of data queried and returned by the API.
+		 */
+		_fields: ['id', 'title', 'link'],
+	},
+	priority: 'single',
+	routeMatchStrategy: 'single',
+};
+
+export const talksParams: PostOrPostsParams = {
+	single: {
+		postType: 'talks',
+	},
+	archive: {
+		postType: 'talks',
 		/**
 		 * Specifying the _fields param reduces the amount of data queried and returned by the API.
 		 */

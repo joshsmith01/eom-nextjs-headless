@@ -55,6 +55,12 @@ const Homepage = ({ homePageSlug }: InferGetStaticPropsType<typeof getStaticProp
 		<>
 			<PageContent params={params} />
 			<h2>Recent Posts (loaded client-side)</h2>
+			<div>
+				<a href="/books/">Books</a>
+			</div>
+			<div>
+				<a href="/books/cool-book/">Cool Book</a>
+			</div>
 			{loading
 				? 'Loading Recent Posts...'
 				: data.posts.map((post) => <RecentPost key={post.id} post={post} />)}
